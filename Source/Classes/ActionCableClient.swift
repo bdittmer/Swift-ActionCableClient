@@ -93,7 +93,7 @@ open class ActionCableClient {
             request.setValue(value, forHTTPHeaderField: field)
         }
 
-        socket = WebSocket(url: request)
+        socket = WebSocket(request: request)
         setupWebSocket()
     }
     
